@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- QUESTION 01 -->
+    <!-- Check if a character is a number, uppercase letter, or lowercase letter: -->
+
+    <script>
+        let char = 'A';  // Example input
+        let ascii = char.charCodeAt(0);
+
+        if (ascii >= 48 && ascii <= 57) {
+            console.log("It's a number.");
+        } else if (ascii >= 65 && ascii <= 90) {
+            console.log("It's an uppercase letter.");
+        } else if (ascii >= 97 && ascii <= 122) {
+            console.log("It's a lowercase letter.");
+        } else {
+            console.log("It's neither a number nor a letter.");
+        }
+    </script>
+
+    <!-- QUESTION 02 -->
+    <!-- Write a javascript program that accept two integrs and display the larger .Also show if the given integrs are equal -->
+
+    <script>
+        let num1 = parseFloat(prompt("Please Enter first number"));
+        let num2 = parseFloat(prompt("Please enter second number"));
+
+       if(num1 > num2){
+        console.log("The larger number is " + num1);
+        alert("The larger number is " + num1);
+       }
+       else if(num2 > num1)
+       {
+        console.log("The larger number is " + num2);
+        alert("The larger number is " + num2);
+       }
+       else {
+        console.log("Both integers are equaal");
+        alert("Both integers are equaal");
+       } 
+    </script>
+
+    <!-- QUESTION 03
+    Write a Program that takes a input number from user & state whether the number is positive , negative or zero  -->
+
+    <script>
+
+        let number = parseFloat(prompt("Enter any number"));
+        if( number > 0){
+            alert("The entered number is positive number :" + number);
+        }
+        else if(number < 0){
+            alert("The entered number is negative number :" + number);
+        }
+        else {
+            alert("The entered number is zero :" +number);
+        }
+    </script>
+
+    <!-- QUESTION 04
+    Write a Program that takes a character i.e(string of lenght 1) and return true if its a vowel, flase otherwise -->
+
+    <script>
+        let char = prompt("Enter a character:");  
+
+        if (char === 'a' || char === 'A') {
+        console.log(true);
+        } else if (char === 'e' || char === 'E') {
+        console.log(true);
+        } else if (char === 'i' || char === 'I') {
+    console.log(true);
+    } else if (char === 'o' || char === 'O') {
+    console.log(true);
+        } else if (char === 'u' || char === 'U') {
+    console.log(true);
+    } else {
+    console.log(false);
+      }
+    </script>
+
+          <!-- QUESTION 05    -->
+          <!-- Write a program that store a correct password -->
+          <script>
+            let correct_password = "admin123";
+
+            let required_password = prompt("Enter your password");
+
+            if( correct_password === ""){
+                alert("please enter your password");
+            }
+            else if( required_password === correct_password){
+                alert("Correct! The password you entered matches the original password.")
+            }
+            else {
+                alert("incorrect Password");
+            }
+          </script> 
+
+
+          <!-- QUESTION 06 -->
+          <!-- IF ELSE STATEMENT -->
+
+          <script>
+
+            var greeting ;
+            var hour = 13 ;
+
+            if (hour < 18){
+                greeting = "Good day";
+            }
+            else {
+                greeting = "Good Evening";
+            }
+
+            alert(greeting);
+            
+          </script>
+
+          
+</body>
+</html>
