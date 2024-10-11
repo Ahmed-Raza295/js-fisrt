@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-image: linear-gradient(to right , rgb(240, 139, 156), rgb(238, 142, 158))
+        }
+
+        .box {
+            width: 550px;
+            height: 550px;
+            background-color: lightpink;
+            text-align: center;
+            margin-top: 4rem;
+            border-radius: 1rem;
+        box-shadow: 10px 10px 10px #555 ;
+        }
+
+        .box img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 3rem;
+        }
+
+        .box h2 {
+
+            margin-top: 2rem;
+        }
+
+        .box p {
+            margin: 1rem;
+
+            font-size: 20px;
+        }
+
+        .box input {
+            border-radius: 5rem;
+            padding: 15px 10px;
+            border: 2px solid white;
+            width: 25rem;
+            font-size: 1rem;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #333;
+            outline: none;
+        }
+      #userInput:hover{
+        box-shadow: 5px 10px 5px #555;
+        transition: all 0.5s ease-in-out;
+        width: 27rem;
+      }
+
+        .btns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .btns button {
+            padding: 15px 8px;
+            width: 10rem;
+            border-radius: 5rem;
+            border: none;
+        }
+        .btns button:hover{
+ box-shadow: 5px 10px 5px #555;
+ transition: all 0.5s ease-in-out;
+ background-color: lightcoral;
+ width: 11rem;
+
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfo_cpyHnv2rWxB8RT9vjBIHh0Q2P3Lm9z9Ngv1_KmiQEyRSpwh3mfBuVYIte6iDoI2mg&usqp=CAU"
+            alt="" id="image">
+        <h1 class="heading">Ahmed Raza</h1>
+        <p class="para">Web developer</p>
+        <input type="text" placeholder="Enter new name and Description" id="userInput">
+        <div class="btns">
+            <button class="nameBtn">Change Name</button>
+            <button class="descripBtn">Change Description</button>
+            <button class="picBtn">Change Picture</button>
+            <button class="backBtn">Change Background</button>
+            <button class="resetBtn">Reset Profile</button>
+        </div>
+    </div>
+    <script src="dom.js"></script>
+</body>
+
+</html>
